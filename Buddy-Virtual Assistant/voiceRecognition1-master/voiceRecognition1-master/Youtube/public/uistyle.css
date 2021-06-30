@@ -1,0 +1,5 @@
+iframe {
+    /* override other styles to make responsive */
+    width: 100%   !important;
+    height: 500px  !important;
+  }

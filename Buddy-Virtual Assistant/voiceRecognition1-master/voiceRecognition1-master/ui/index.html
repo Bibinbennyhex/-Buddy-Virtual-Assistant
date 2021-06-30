@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>TheEvent Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: TheEvent - v4.3.0
+  * Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+  <!--navigation bar-->
+   
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center ">
+    <div class="container-fluid container-xxl d-flex align-items-center">
+
+      <div id="logo" class="me-auto">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
+        <a href="index.html" class="scrollto"><img src="img/icon.png" alt="" title=""></a>
+      </div>
+
+      
+    <a class="buy-tickets scrollto" href="javascript:window.close();" style='font-size:20px;'>X</a>
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+      <h1 class="mb-4 pb-0">Hey! Your <br><span>Buddy</span> is Here</h1>
+      <p class="mb-4 pb-0">Tap the Blue Button to Speak</p>
+      <a href="https://www.youtube.com/watch?v=wYlzjuQilao" class="glightbox play-btn mb-4"></a>
+      <a href="http://127.0.0.1:5500/" class="about-btn scrollto">Sweet Buddy</a>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+   
+    
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="node_modules/@alan-ai/alan-sdk-web/dist/alan_lib.js"></script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+  function newwin(){
+      mywindow=window.quit()
+  }
+  </script>
+  <script>
+  alanBtn({ 
+    key: 'ef23bc49f94c1ebb0ab26ce057427d302e956eca572e1d8b807a3e2338fdd0dc/stage',
+    onCommand: (commandData) => {
+      if (commandData.command === 'go:back') {
+      //call client code that will react to the received command
+       window.location.href = "http://localhost:3001/";
+      }
+      if (commandData.command === 'Camera') {
+        cam()
+      //call client code that will react to the received command
+      }
+      if (commandData.command === "Show") {
+        //call client code that will react on the received command
+        updates()
+      }
+      if (commandData.command === "Utube") {
+        //call client code that will react on the received command
+        stube()
+      }
+      if (commandData.command === "gogle") {
+        //call client code that will react on the received command
+        googlee()
+      }
+      if (commandData.command === "trans") {
+        //call client code that will react on the received command
+        speech()
+      }
+    },
+    
+  });
+</script>
+<script>
+function goBack() {
+  mywindow=window.history.back();
+}
+function cam() {
+  window.location.href = "http://localhost:3001/";
+}
+function updates() {
+  window.location.href = "http://localhost:3000/";
+}
+function stube() {
+  window.location.href = "https://www.youtube.com/results?";
+}
+function googlee() {
+  window.location.href = "https://www.google.com/";
+  
+}
+function speech() {
+  window.location.href = "https://translate.google.co.in/";
+  
+}
+</script>
+</body>
+
+</html>
